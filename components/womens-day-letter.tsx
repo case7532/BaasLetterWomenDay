@@ -40,11 +40,11 @@ export function WomensDayLetter() {
         className="relative bg-white/90 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-xl"
       >
         <div className="flex justify-between items-center mb-8">
-          <div className="flex items-center gap-2">
-            <div className="relative h-10 w-10">
-              <Image src="/placeholder.svg?height=40&width=40" alt="Next.js Logo" fill className="object-contain" />
+          <div className="flex items-center gap-4">
+            <div className="relative h-20 w-20">
+              <Image src="/placeholder-logo.png" alt="qq" fill className="object-contain" />
             </div>
-            <h2 className="text-xl font-semibold text-gray-800">Next.js</h2>
+            <h2 className="text-xl font-semibold text-gray-800">Baas team</h2>
           </div>
           <div className="text-sm text-gray-500">March 8th, 2025</div>
         </div>
