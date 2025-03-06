@@ -5,6 +5,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { Heart } from "lucide-react"
 import { FallingFlowers } from "./falling-flowers"
+import WomensDayInvitationCard from "./card"
 
 export function WomensDayLetter() {
   const [mounted, setMounted] = useState(false)
@@ -16,7 +17,7 @@ export function WomensDayLetter() {
   if (!mounted) return null
 
   return (
-    <div className="relative max-w-3xl w-full mx-auto">
+    <div className="relative max-w-3xl my-16 w-full mx-auto">
       {/* Flower Background */}
       <div className="absolute inset-0 -z-10 overflow-hidden rounded-2xl">
         <div
@@ -55,19 +56,15 @@ export function WomensDayLetter() {
           <p>Gửi những nàng thơ kiều diễm team Baas,</p>
 
           <p>
-          Như những đóa sen vươn mình giữa bùn lầy, các chị em đã tỏa hương thơm ngát giữa những ngày làm việc tất bật. Đôi mắt tinh anh của các chị em soi rọi mọi khó khăn, đôi tay khéo léo hóa giải mọi bài toán phức tạp, và nụ cười rạng rỡ xua tan mọi mệt mỏi của cuộc sống thường nhật.
+            Như những đóa sen vươn mình giữa bùn lầy, các chị em đã tỏa hương thơm ngát giữa những ngày làm việc tất bật. Đôi mắt tinh anh của các chị em soi rọi mọi khó khăn, đôi tay khéo léo hóa giải mọi bài toán phức tạp, và nụ cười rạng rỡ xua tan mọi mệt mỏi của cuộc sống thường nhật.
           </p>
 
           <p>
-          Vẻ đẹp của chị em không chỉ nằm ở diện mạo mà còn ở sự kiên cường, dịu dàng và tài năng phi thường. Như Lưu Quang Vũ từng viết: "Đàn bà đẹp nhất khi họ mạnh mẽ", các chị em đã làm nên điều kỳ diệu mỗi ngày bằng sức mạnh nội tâm và trí tuệ sắc bén.
+            Vẻ đẹp của chị em không chỉ nằm ở diện mạo mà còn ở sự kiên cường, dịu dàng và tài năng phi thường. Như Lưu Quang Vũ từng viết: "Đàn bà đẹp nhất khi họ mạnh mẽ", các chị em đã làm nên điều kỳ diệu mỗi ngày bằng sức mạnh nội tâm và trí tuệ sắc bén.
           </p>
 
           <p>
-          Để tôn vinh những đóa hồng kiêu hãnh, chúng tôi kính mời chị em đến 5b Ô Quan Chưởng vào 11h30 ngày 7-3 để cùng nhau nâng ly bia mát lạnh, thả hồn theo những câu chuyện bay bổng, và đắm mình trong tiếng cười rộn rã. Nơi đó, chúng ta sẽ gạt bỏ mọi lo toan, để tâm hồn tự do như cánh chim bay lượn trên bầu trời rộng lớn.
-          </p>
-
-          <p>
-          Mong chị em hãy điểm tô thêm cho buổi gặp mặt bằng ánh mắt long lanh và tiếng cười ngân vang như chuông bạc!
+            Mong chị em hãy điểm tô thêm cho buổi gặp mặt bằng ánh mắt long lanh và tiếng cười ngân vang như chuông bạc!
           </p>
 
           <div className="pt-4">
@@ -81,6 +78,8 @@ export function WomensDayLetter() {
             <Heart className="text-pink-500 h-8 w-8" fill="#ec4899" />
           </motion.div>
         </div>
+
+        <WomensDayInvitationCard />
       </motion.div>
     </div>
   )
